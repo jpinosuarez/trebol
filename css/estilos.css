@@ -180,23 +180,8 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center; }
-  #importante-seccion img {
-    width: 50%; }
-  #importante-seccion ul {
-    padding-left: 0;
-    width: 50%;
-    border-radius: 5px; }
-    #importante-seccion ul li {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      margin-bottom: 1rem;
-      list-style-type: none;
-      text-align: center;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.281); }
-      #importante-seccion ul li p {
-        margin: 0;
-        padding: 1em; }
+  #importante-seccion div {
+    margin: 2rem; }
 
 #datos-inicio {
   display: flex;

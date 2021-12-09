@@ -244,27 +244,6 @@ background-size: cover;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    img {
-        width: 50%;
-    }
-    ul {
-        padding-left: 0;
-        width: 50%;
-        border-radius: 5px;
-        li {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            margin-bottom: 1rem;
-            list-style-type: none;
-            text-align: center;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.281);
-            p {
-                margin: 0;
-                padding: 1em;
-            }
-        }
-    }
 }
 
 #datos-inicio {
