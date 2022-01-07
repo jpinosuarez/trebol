@@ -534,6 +534,9 @@ footer {
     margin: 0 3rem 0 3rem; }
   header {
     height: auto; }
+    header #logo {
+      width: 150px;
+      margin: 0 20px; }
   #img-header-inicio {
     display: none; }
   #header-inicio-texto p {
