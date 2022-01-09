@@ -485,12 +485,6 @@ main {
         margin: 0;
         justify-content: space-between;
 
-        img {
-            width: 18rem;
-            border-radius: 5px;
-            margin-bottom: 2rem;
-        }
-
         div {
             margin: 1rem 0 1rem 0;
             display: flex;
@@ -500,11 +494,23 @@ main {
 
             h3 {
                 text-align: center;
+                font-size: 1.5em;
             }
 
             p {
                 text-align: center;
             }
+        }
+    }
+}
+
+#tarjetas-rrss-seccion {
+    div {
+        color: white;
+        background-color: $color-main;
+        ul li {
+            color: white !important;
+            background-color: $color-main !important;
         }
     }
 }
@@ -617,32 +623,6 @@ footer {
     }
 }
 
-#nosotros-valores {
-    margin-top: 2rem;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-
-    h2 {
-        text-align: center;
-    }
-
-    ul {
-        list-style-type: none;
-        columns: 20rem 2;
-        column-gap: 40px;
-        padding: 0;
-        margin: 2rem 1rem;
-
-        li {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.171);
-            font-size: 1.2em;
-            font-weight: 400;
-            margin: 1rem 0;
-        }
-    }
-}
-
 #portfolio-header {
     display: flex;
     flex-flow: column wrap;
@@ -650,17 +630,14 @@ footer {
 
     h1 {
         text-align: center;
+        margin: 2rem 0;
     }
 
     p {
+        margin: 4rem 0;
         text-align: center;
         width: 60%;
     }
-
-    a {
-        margin-top: 2rem;
-    }
-
 }
 
 #portfolio-grid {
@@ -723,6 +700,10 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, 0.164);
 }
 
+#contacto-mobile {
+    display: none !important;
+}
+
 
 
 
@@ -732,15 +713,34 @@ footer {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin: 0 3rem 0 3rem;
+        margin: 0 .5rem;
+        .tarjeta-servicios {
+            margin: 1rem 0;
+        }
+    }
+
+    #tarjetas-rrss-seccion {
+        flex-direction: column !important;
+        .tarjeta-rrss {
+            margin: 1rem 0;
+        }
     }
 
     header {
         height: auto;
         #logo {
             width: 150px;
-            margin: 0 20px;
+            margin: 0;
         }
+    }
+
+    #logo-principal {
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        padding: 0 !important;
+        font-size: auto;
     }
 
     #img-header-inicio {
@@ -802,7 +802,15 @@ footer {
 
     #seccion-header-inicio {
         margin: 0;
-
+        padding: 0;
+        #header-inicio {
+            padding: 0;
+            #header-inicio-texto {
+                h1 {
+                    font-size: 1.8em !important;
+                }
+            }
+        }
     }
 
     #header-inicio {
@@ -905,45 +913,64 @@ footer {
         }
     }
 
-    #nosotros-header {
-        h1 {
-            margin: 0;
-        }
+    // #nosotros-header {
+    //     h1 {
+    //         margin: 0;
+    //     }
 
+    //     div {
+    //         margin-top: 1rem;
+    //     }
+
+    //     div p {
+    //         margin: 0;
+    //     }
+
+    //     h1,
+    //     div {
+    //         width: 100%;
+    //     }
+
+    //     div div {}
+    // }
+
+    // #nosotros-img img {
+    //     width: 80%;
+    // }
+
+    // #nosotros-perfiles {
+    //     flex-flow: column;
+
+    //     div {
+    //         width: 100%;
+    //     }
+    // }
+
+    // #nosotros-valores {
+    //     ul {
+    //         width: 80%;
+
+    //         li {
+    //             text-align: center;
+    //         }
+    //     }
+    // }
+
+    .nosotros {
+        flex-direction: column !important;
+        width: 100%;
         div {
-            margin-top: 1rem;
-        }
-
-        div p {
-            margin: 0;
-        }
-
-        h1,
-        div {
-            width: 100%;
-        }
-
-        div div {}
-    }
-
-    #nosotros-img img {
-        width: 80%;
-    }
-
-    #nosotros-perfiles {
-        flex-flow: column;
-
-        div {
-            width: 100%;
-        }
-    }
-
-    #nosotros-valores {
-        ul {
-            width: 80%;
-
-            li {
+            margin: 1rem 0;
+            p {
                 text-align: center;
+            }
+        }
+    }
+
+    #valores {
+        div {
+            ul {
+                width: 100% !important;
             }
         }
     }
@@ -953,10 +980,30 @@ footer {
     }
 
     #contacto-rrss {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        display: none;
+    }
+
+    .btn-primario, .btn-secundario {
+        padding: .5rem 1rem;
+        letter-spacing: auto;
+        font-size: .8em !important;
+    }
+
+    footer div img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #contacto-mobile {
+        display: flex !important;
+        align-items: center;
+        a {
+            margin: 1rem 0;
+        }
     }
 
 }
+
+
 
 // ==============================

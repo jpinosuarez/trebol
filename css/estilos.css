@@ -358,10 +358,6 @@ main {
     width: 18rem;
     margin: 0;
     justify-content: space-between; }
-    #seccion-servicios .tarjeta-servicios img {
-      width: 18rem;
-      border-radius: 5px;
-      margin-bottom: 2rem; }
     #seccion-servicios .tarjeta-servicios div {
       margin: 1rem 0 1rem 0;
       display: flex;
@@ -369,9 +365,17 @@ main {
       align-items: center;
       justify-content: center; }
       #seccion-servicios .tarjeta-servicios div h3 {
-        text-align: center; }
+        text-align: center;
+        font-size: 1.5em; }
       #seccion-servicios .tarjeta-servicios div p {
         text-align: center; }
+
+#tarjetas-rrss-seccion div {
+  color: white;
+  background-color: #2A9638; }
+  #tarjetas-rrss-seccion div ul li {
+    color: white !important;
+    background-color: #2A9638 !important; }
 
 footer {
   background-color: #2A9638;
@@ -451,36 +455,17 @@ footer {
       margin: 0.5rem 0;
       text-align: center; }
 
-#nosotros-valores {
-  margin-top: 2rem;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center; }
-  #nosotros-valores h2 {
-    text-align: center; }
-  #nosotros-valores ul {
-    list-style-type: none;
-    columns: 20rem 2;
-    column-gap: 40px;
-    padding: 0;
-    margin: 2rem 1rem; }
-    #nosotros-valores ul li {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.171);
-      font-size: 1.2em;
-      font-weight: 400;
-      margin: 1rem 0; }
-
 #portfolio-header {
   display: flex;
   flex-flow: column wrap;
   align-items: center; }
   #portfolio-header h1 {
-    text-align: center; }
+    text-align: center;
+    margin: 2rem 0; }
   #portfolio-header p {
+    margin: 4rem 0;
     text-align: center;
     width: 60%; }
-  #portfolio-header a {
-    margin-top: 2rem; }
 
 #portfolio-grid {
   margin-top: 5rem;
@@ -526,17 +511,31 @@ footer {
 #titulo-formulario {
   border-top: 1px solid rgba(0, 0, 0, 0.164); }
 
+#contacto-mobile {
+  display: none !important; }
+
 @media screen and (max-width: 768px) {
   #seccion-servicios {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin: 0 3rem 0 3rem; }
+    margin: 0 .5rem; }
+    #seccion-servicios .tarjeta-servicios {
+      margin: 1rem 0; }
+  #tarjetas-rrss-seccion {
+    flex-direction: column !important; }
+    #tarjetas-rrss-seccion .tarjeta-rrss {
+      margin: 1rem 0; }
   header {
     height: auto; }
     header #logo {
       width: 150px;
-      margin: 0 20px; }
+      margin: 0; }
+  #logo-principal {
+    margin: 0; }
+  .navbar-toggler {
+    padding: 0 !important;
+    font-size: auto; }
   #img-header-inicio {
     display: none; }
   #header-inicio-texto p {
@@ -573,7 +572,12 @@ footer {
     margin-left: 50px !important;
     width: 75% !important; }
   #seccion-header-inicio {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
+    #seccion-header-inicio #header-inicio {
+      padding: 0; }
+      #seccion-header-inicio #header-inicio #header-inicio-texto h1 {
+        font-size: 1.8em !important; }
   #header-inicio {
     margin: 0 !important;
     padding: 0, 5rem !important;
@@ -628,27 +632,28 @@ footer {
       text-align: center; }
     #elegirnos-inicio button {
       width: 50% !important; }
-  #nosotros-header h1 {
-    margin: 0; }
-  #nosotros-header div {
-    margin-top: 1rem; }
-  #nosotros-header div p {
-    margin: 0; }
-  #nosotros-header h1,
-  #nosotros-header div {
+  .nosotros {
+    flex-direction: column !important;
     width: 100%; }
-  #nosotros-img img {
-    width: 80%; }
-  #nosotros-perfiles {
-    flex-flow: column; }
-    #nosotros-perfiles div {
-      width: 100%; }
-  #nosotros-valores ul {
-    width: 80%; }
-    #nosotros-valores ul li {
-      text-align: center; }
+    .nosotros div {
+      margin: 1rem 0; }
+      .nosotros div p {
+        text-align: center; }
+  #valores div ul {
+    width: 100% !important; }
   #portfolio-grid {
     grid-template-columns: 100%; }
   #contacto-rrss {
-    margin-top: 1rem;
-    margin-bottom: 2rem; } }
+    display: none; }
+  .btn-primario, .btn-secundario {
+    padding: .5rem 1rem;
+    letter-spacing: auto;
+    font-size: .8em !important; }
+  footer div img {
+    width: 24px;
+    height: 24px; }
+  #contacto-mobile {
+    display: flex !important;
+    align-items: center; }
+    #contacto-mobile a {
+      margin: 1rem 0; } }
